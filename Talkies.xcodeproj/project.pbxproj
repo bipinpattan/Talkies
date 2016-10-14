@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BCA77521DB0A0B700716D71 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA77511DB0A0B700716D71 /* MoviesViewController.swift */; };
+		1BCA77551DB0A89D00716D71 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA77541DB0A89D00716D71 /* MovieTableViewCell.swift */; };
 		1BFC6E381DAF186100ACDA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC6E371DAF186100ACDA87 /* AppDelegate.swift */; };
-		1BFC6E3A1DAF186100ACDA87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC6E391DAF186100ACDA87 /* ViewController.swift */; };
 		1BFC6E3D1DAF186100ACDA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFC6E3B1DAF186100ACDA87 /* Main.storyboard */; };
 		1BFC6E3F1DAF186100ACDA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFC6E3E1DAF186100ACDA87 /* Assets.xcassets */; };
 		1BFC6E421DAF186100ACDA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFC6E401DAF186100ACDA87 /* LaunchScreen.storyboard */; };
+		D95B21F0DA0BE93BF9E9991B /* Pods_Talkies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CD713EFB456BB61A0133C8 /* Pods_Talkies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BCA77511DB0A0B700716D71 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		1BCA77541DB0A89D00716D71 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = ViewControllers/MovieTableViewCell.swift; sourceTree = "<group>"; };
 		1BFC6E341DAF186100ACDA87 /* Talkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFC6E371DAF186100ACDA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BFC6E391DAF186100ACDA87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BFC6E3C1DAF186100ACDA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BFC6E3E1DAF186100ACDA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BFC6E411DAF186100ACDA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFC6E431DAF186100ACDA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29371C20C0592EB2194A2E66 /* Pods-Talkies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Talkies/Pods-Talkies.release.xcconfig"; sourceTree = "<group>"; };
+		65EC66FAF812CECC50552EB4 /* Pods-Talkies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Talkies/Pods-Talkies.debug.xcconfig"; sourceTree = "<group>"; };
+		F5CD713EFB456BB61A0133C8 /* Pods_Talkies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talkies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95B21F0DA0BE93BF9E9991B /* Pods_Talkies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BCA77531DB0A0BC00716D71 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BCA77511DB0A0B700716D71 /* MoviesViewController.swift */,
+				1BCA77541DB0A89D00716D71 /* MovieTableViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		1BFC6E2B1DAF186100ACDA87 = {
 			isa = PBXGroup;
 			children = (
 				1BFC6E361DAF186100ACDA87 /* Talkies */,
 				1BFC6E351DAF186100ACDA87 /* Products */,
+				3679F384B1406863F8031848 /* Pods */,
+				F2326A9C9AE8B0EBD1FF3244 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,31 @@
 		1BFC6E361DAF186100ACDA87 /* Talkies */ = {
 			isa = PBXGroup;
 			children = (
+				1BCA77531DB0A0BC00716D71 /* ViewControllers */,
 				1BFC6E371DAF186100ACDA87 /* AppDelegate.swift */,
-				1BFC6E391DAF186100ACDA87 /* ViewController.swift */,
 				1BFC6E3B1DAF186100ACDA87 /* Main.storyboard */,
 				1BFC6E3E1DAF186100ACDA87 /* Assets.xcassets */,
 				1BFC6E401DAF186100ACDA87 /* LaunchScreen.storyboard */,
 				1BFC6E431DAF186100ACDA87 /* Info.plist */,
 			);
 			path = Talkies;
+			sourceTree = "<group>";
+		};
+		3679F384B1406863F8031848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65EC66FAF812CECC50552EB4 /* Pods-Talkies.debug.xcconfig */,
+				29371C20C0592EB2194A2E66 /* Pods-Talkies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2326A9C9AE8B0EBD1FF3244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5CD713EFB456BB61A0133C8 /* Pods_Talkies.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BFC6E461DAF186100ACDA87 /* Build configuration list for PBXNativeTarget "Talkies" */;
 			buildPhases = (
+				128A31BBA8B40E6C8343B904 /* [CP] Check Pods Manifest.lock */,
 				1BFC6E301DAF186100ACDA87 /* Sources */,
 				1BFC6E311DAF186100ACDA87 /* Frameworks */,
 				1BFC6E321DAF186100ACDA87 /* Resources */,
+				1BCA06E3B73C3F0794CE6451 /* [CP] Embed Pods Frameworks */,
+				4BFE7AA6D09FF460C2490B6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +169,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		128A31BBA8B40E6C8343B904 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1BCA06E3B73C3F0794CE6451 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Talkies/Pods-Talkies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BFE7AA6D09FF460C2490B6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Talkies/Pods-Talkies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BFC6E301DAF186100ACDA87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFC6E3A1DAF186100ACDA87 /* ViewController.swift in Sources */,
 				1BFC6E381DAF186100ACDA87 /* AppDelegate.swift in Sources */,
+				1BCA77521DB0A0B700716D71 /* MoviesViewController.swift in Sources */,
+				1BCA77551DB0A89D00716D71 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +345,7 @@
 		};
 		1BFC6E471DAF186100ACDA87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EC66FAF812CECC50552EB4 /* Pods-Talkies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Talkies/Info.plist;
@@ -270,6 +358,7 @@
 		};
 		1BFC6E481DAF186100ACDA87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29371C20C0592EB2194A2E66 /* Pods-Talkies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Talkies/Info.plist;
@@ -299,6 +388,7 @@
 				1BFC6E481DAF186100ACDA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
