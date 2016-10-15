@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -68,11 +69,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 if let responseDictionary = try! JSONSerialization.jsonObject(with: data, options:[]) as? NSDictionary {
                     self.movies = responseDictionary.value(forKeyPath: "results") as? [NSDictionary]
                     NSLog("Movies: \(self.movies?.count)")
+                    Thread.sleep(forTimeInterval: 0.25)
+                    MBProgressHUD.hide(for: self.view, animated: true)
                     self.tableView.reloadData()
                 }
             }
         });
         task.resume()
+        MBProgressHUD.showAdded(to: self.view, animated: true)
     }
     
     // MARK: - Navigation

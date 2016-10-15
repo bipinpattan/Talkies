@@ -7,4 +7,5 @@ target 'Talkies' do
 
   # Pods for Talkies
 	pod 'AFNetworking', '~> 2.6'
+	pod 'MBProgressHUD'
 end
