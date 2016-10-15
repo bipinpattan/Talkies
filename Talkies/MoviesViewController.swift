@@ -13,6 +13,7 @@ import MBProgressHUD
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl = UIRefreshControl()
     var movies: [NSDictionary]?
     var endPoint: String!
 
@@ -47,10 +48,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
 
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        startNetworkActivity()
+    }
+    
     // MARK:- Helper functions
     private func setupUI() {
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.refreshControl.addTarget(self, action: #selector(refreshControlAction(refreshControl:)), for: UIControlEvents.valueChanged)
+        self.tableView.insertSubview(self.refreshControl, at: 0)
     }
     
     private func startNetworkActivity() {
@@ -71,6 +78,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                     NSLog("Movies: \(self.movies?.count)")
                     Thread.sleep(forTimeInterval: 0.25)
                     MBProgressHUD.hide(for: self.view, animated: true)
+                    self.refreshControl.endRefreshing()
                     self.tableView.reloadData()
                 }
             }

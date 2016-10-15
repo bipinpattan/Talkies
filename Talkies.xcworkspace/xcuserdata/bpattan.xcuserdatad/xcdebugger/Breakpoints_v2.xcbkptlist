@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Talkies/MoviesViewController.swift"
-            timestampString = "498255441.604126"
+            timestampString = "498256966.392332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "startNetworkActivity()"
             landmarkType = "7">
          </BreakpointContent>
