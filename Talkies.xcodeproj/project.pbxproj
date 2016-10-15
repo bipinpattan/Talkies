@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9C5E0D1DB2A5760086252D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C5E0C1DB2A5760086252D /* DetailViewController.swift */; };
 		1BCA77521DB0A0B700716D71 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA77511DB0A0B700716D71 /* MoviesViewController.swift */; };
 		1BCA77551DB0A89D00716D71 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA77541DB0A89D00716D71 /* MovieTableViewCell.swift */; };
 		1BFC6E381DAF186100ACDA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC6E371DAF186100ACDA87 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B9C5E0C1DB2A5760086252D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ViewControllers/DetailViewController.swift; sourceTree = "<group>"; };
 		1BCA77511DB0A0B700716D71 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		1BCA77541DB0A89D00716D71 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = ViewControllers/MovieTableViewCell.swift; sourceTree = "<group>"; };
 		1BFC6E341DAF186100ACDA87 /* Talkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 			children = (
 				1BCA77511DB0A0B700716D71 /* MoviesViewController.swift */,
 				1BCA77541DB0A89D00716D71 /* MovieTableViewCell.swift */,
+				1B9C5E0C1DB2A5760086252D /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				1BFC6E381DAF186100ACDA87 /* AppDelegate.swift in Sources */,
 				1BCA77521DB0A0B700716D71 /* MoviesViewController.swift in Sources */,
 				1BCA77551DB0A89D00716D71 /* MovieTableViewCell.swift in Sources */,
+				1B9C5E0D1DB2A5760086252D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
