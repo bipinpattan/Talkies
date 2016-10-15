@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupUI()
         return true
     }
 
@@ -41,6 +42,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func setupUI() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let nowPlayingNavigationContoller = storyBoard.instantiateViewController(withIdentifier: "MoviesNavigationViewContoller") as! UINavigationController
+        let nowPayingViewController = nowPlayingNavigationContoller.topViewController as! MoviesViewController
+        nowPayingViewController.endPoint = "now_playing"
+        nowPlayingNavigationContoller.tabBarItem.title = "Now Playing"
+        nowPlayingNavigationContoller.tabBarItem.image = UIImage(named: "cinema")
+        
+        let topRatedNavigationContoller = storyBoard.instantiateViewController(withIdentifier: "MoviesNavigationViewContoller") as! UINavigationController
+        let topRatedViewController = topRatedNavigationContoller.topViewController as! MoviesViewController
+        topRatedViewController.endPoint = "top_rated"
+        topRatedNavigationContoller.tabBarItem.title = "Top Rated"
+        topRatedNavigationContoller.tabBarItem.image = UIImage(named: "star")
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [nowPlayingNavigationContoller, topRatedNavigationContoller]
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
+    }
 }
 
