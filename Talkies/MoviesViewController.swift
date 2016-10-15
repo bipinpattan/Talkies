@@ -40,10 +40,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         print("Row - \(indexPath.row)")
         let movieInfo = self.movies?[indexPath.row]
         cell.titleLabel?.text = movieInfo?.value(forKey: "original_title") as! String?
-        cell.overviewLabel?.text = movieInfo?.value(forKey: "overview") as! String?
-        let baseUrl = "http://image.tmdb.org/t/p/w500"
         if let posterPath = movieInfo?.value(forKey: "poster_path") as! String? {
-//            let imageUrl = NSURL(string: baseUrl + posterPath)
             let imageUrl = URL(string: baseUrl + posterPath)
             let imageRequest = URLRequest(url: imageUrl!)
             cell.posterImageView?.setImageWith(imageRequest, placeholderImage: nil, success: { (imageRequest, imageResponse, image) -> Void in
